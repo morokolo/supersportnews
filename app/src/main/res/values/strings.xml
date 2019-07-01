@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SupersportNews</string>
+    <string name="action_settings">Settings</string>
+    <string name="really_long_string">Note that a ScrollView can only contain a single child element so if you need multiple things to be scrollable, you need to wrap that content into a layout as shown above.In certain situations, you want to position content beneath the end of the scrollable content area. For example for a  where you can only accept once youve scrolled through all the content. </string>
+
+</resources>

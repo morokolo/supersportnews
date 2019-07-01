@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/headline"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorBlack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_sentiment_neutral_black_24dp" />
+
+            <WebView
+                android:id="@+id/body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+    <!--<merge xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    tools:orientation="vertical"-->
+<!--    tools:parentTag="android.widget.LinearLayout">-->
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="222dp"-->
+<!--        android:contentDescription="@null"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        app:srcCompat="@drawable/ic_sentiment_neutral_black_24dp"-->
+<!--        tools:ignore="VectorDrawableCompat" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="8dp">-->
+
+<!--        <TextView-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="2dp"-->
+<!--            android:ellipsize="end"-->
+<!--            tools:text="Sample content"-->
+<!--            android:maxLines="1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/headline"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ellipsize="end"-->
+<!--            android:maxLines="2"-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            tools:text="Sample content" />-->
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/headline"-->
+<!--        style="?android:attr/windowTitleStyle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:lineSpacingExtra="4sp"-->
+<!--        android:paddingStart="24dp"-->
+<!--        android:paddingEnd="24dp"-->
+<!--        android:singleLine="false"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/date"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/image"-->
+<!--        tools:text="Lorem ipsum" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/date"-->
+<!--        style="?android:attr/windowTitleStyle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:lineSpacingExtra="4sp"-->
+<!--        android:paddingStart="24dp"-->
+<!--        android:paddingEnd="24dp"-->
+<!--        android:singleLine="false"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/body"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/headline"-->
+<!--        tools:text="Lorem ipsum" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/body"-->
+<!--        style="?android:attr/windowTitleStyle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:lineSpacingExtra="4sp"-->
+<!--        android:paddingStart="24dp"-->
+<!--        android:paddingEnd="24dp"-->
+<!--        android:singleLine="false"-->
+<!--        tools:text="Lorem ipsum" />-->
+
+<!--</merge>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".NewsDetail">-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:src="@drawable/ic_sentiment_neutral_black_24dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/headline"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.74" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/headline"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="top|start"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_weight="1"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/date"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/image"-->
+<!--        tools:text="News Headline" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/date"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center|start"-->
+<!--        android:layout_weight="1"-->
+<!--        android:ellipsize="end"-->
+<!--        android:maxLines="5"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.047"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/headline"-->
+<!--        tools:text="Article Date" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/body"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center|start"-->
+<!--        android:layout_weight="1"-->
+<!--        android:ellipsize="end"-->
+<!--        android:maxLines="5"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.051"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/headline"-->
+<!--        app:layout_constraintVertical_bias="0.879"-->
+<!--        tools:text="News Summary" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
